@@ -1,0 +1,57 @@
+.about-section {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the divs */
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+.about-heading {
+    padding-bottom: 30px;
+    font-size: 2.2rem;
+    color: #fcea7e;
+    text-shadow:
+    0 0 7px #fcea7e;
+}
+  
+  .about-container {
+    display: flex;
+    align-items: center; /* Vertically centers items */
+    justify-content: flex-start; /* Aligns the items to the start horizontally */
+    gap: 30px; /* Adds space between the image and the text */
+  }
+  
+  .about-img {
+    width: 350px;
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 1.5rem;
+    justify-self: center;
+  }
+  
+  .about-text {
+    max-width: 500px; /* Optional: limits the width of the text */
+  }
+
+  .resume-button {
+    padding: 15px 20px;
+    background-color: #FE5BD6;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  .resume-button:hover {
+    background-color: #fcea7e;
+    color: #210138;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #fcea7e, 0 0 15px #fcea7e;
+  }
+  
+  .resume-button:active {
+    transform: scale(0.95);
+  }
+  

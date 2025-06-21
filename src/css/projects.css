@@ -1,0 +1,192 @@
+.projects-section {
+  padding-top: 80px;
+}
+
+.projects-heading {
+    padding-bottom: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fcea7e;
+    text-shadow:
+    0 0 7px #fcea7e;
+}
+
+.project-grid-wrapper {
+    padding: 0em 2em;
+    padding-bottom: 20px;
+    transition: filter 0.3s ease;
+  }
+  
+  .project-grid-wrapper.blurred {
+    filter: blur(6px);
+    pointer-events: none;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 70%; /* smaller than 100% of the grid column */
+    margin: 0 auto; /* center horizontally */
+  }
+  
+  .project-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-popup {
+    background: white;
+    padding: 2em;
+    padding-bottom: 1em;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .project-card {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .project-card:hover {
+    /* transform: scale(1.02); */
+    /* transition: transform 0.2s ease; */
+    box-shadow: 0 0 5px #FE5BD6, 0 0 10px #FE5BD6, 0 0 20px #FE5BD6;
+  }
+
+.project-card:hover .project-img {
+    transform: scale(1.02);
+    transition: transform 0.1s ease;
+}
+
+.expanded-card {
+    position: relative;
+}
+  
+.close-button {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+  
+.project-img {
+    width: 100%;       
+    /* height: 70%; */
+    border-radius: 1rem;
+    object-fit: cover;     /* or use 'contain' to fit without cropping */
+    aspect-ratio: 3/2;
+}
+
+.project-title-container {
+    display: flex;
+}
+
+.project-title {
+    color: black;
+    padding: 0px;
+    margin: 2px;
+}
+
+.link-button {
+    /* width: 20px;        
+    height: 20px; */
+    padding-left: 5px;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.link-button:hover {
+    color: #FE5BD6;
+    text-shadow:
+      0 0 5px #FE5BD6;
+  }
+
+.project-skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.project-skill {
+    padding: 5px;
+    position: relative;
+    color: black;
+    font-size: 0.8rem;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    margin: 0px;
+}
+
+.project-type {
+    color: rgb(66, 66, 66);
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 1px;
+}
+
+.project-desc {
+    color: black;
+    font-size: 1em;
+}
+
+.more-projects-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.more-projects-button {
+  width: 170px;
+  height: 60px;
+  background-color: #FE5BD6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.more-projects-button:hover {
+  background-color: #fcea7e;
+  color: #210138;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #fcea7e, 0 0 15px #fcea7e;
+}
+
+.more-projects-button:active {
+  transform: scale(0.95);
+}
+
+/* Add dot before each item except the first */
+/* .project-skill:not(:first-child)::before {
+    content: "•";
+    color: black;
+    margin-right: 0.4rem;
+} */

@@ -1,0 +1,87 @@
+.contact-section {
+    padding-top: 80px;
+}
+
+.contact-options {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-heading {
+    padding-bottom: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fcea7e;
+    text-shadow:
+    0 0 7px #fcea7e;
+}
+
+.contact-button {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 250px;           
+    text-align: center;        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2.5px solid rgb(196, 196, 196);
+}
+
+.contact-button:hover {
+    border: 1px solid #FE5BD6;
+    box-shadow: 0 0 10px #FE5BD6, 0 0 15px #FE5BD6;
+    /* transform: scale(1.05); */
+}
+
+.contact-icon {
+    color: black;
+    font-size: 2em;
+    margin: 0px;
+}
+
+.contact-title {
+    color: black;
+    margin: 0px;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    color: black;
+    margin: 0px;
+    font-size: 0.9em;
+}
+
+.email-link,
+.connect-link {
+    font-size: 1em;
+    color: black;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.email-link:hover {
+    color: black;
+}
+
+.connect-link:hover {
+    color: #FE5BD6;
+    text-shadow:
+    0 0 5px #FE5BD6,
+    0 0 10px #FE5BD6;
+}
+
+.uil-arrow-right {
+    font-size: 1em;
+}
+
+.end-marker {
+    text-align: center;
+    opacity: 0.7;
+    font-size: 2.3em;
+    margin-top: 80px;
+    margin-bottom: 5px;
+}

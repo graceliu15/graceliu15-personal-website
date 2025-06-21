@@ -1,0 +1,129 @@
+.home-section {
+  padding-top: 80px; /* Same height as header */
+  padding-bottom: 0px;
+}
+
+.home-section h2 {
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+/* Left-align the heading */
+.heading {
+  font-size: 2rem;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.neon-container {
+  margin: 10px auto; /* Center it horizontally */
+  padding: 95px;
+  border: 2px solid #FE5BD6;
+  box-shadow: 0 0 5px #FE5BD6, 0 0 10px #FE5BD6, 0 0 20px #FE5BD6, 0 0 40px #FE5BD6;
+  text-align: center;
+}
+
+.name {
+  font-family:  "Monsterrat", sans-serif;
+  font-size: 8rem;
+  color: #FE5BD6;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border-right: 3px solid #FE5BD6; */
+  width: 0;
+  text-shadow:
+    0 0 5px #FE5BD6,
+    0 0 10px #FE5BD6,
+    0 0 20px #FE5BD6,
+    0 0 40px #FE5BD6,
+    0 0 80px #FE5BD6;
+}
+
+.name:hover {
+  color: #fcea7e;
+  text-shadow:
+    0 0 5px #fcea7e,
+    0 0 10px #fcea7e,
+    0 0 20px #fcea7e,
+    0 0 40px #fcea7e,
+    0 0 80px #fcea7e;
+}
+
+.name:hover + .typed-cursor {
+  color: #fcea7e;
+  text-shadow:
+    0 0 5px #fcea7e,
+    0 0 10px #fcea7e;
+}
+
+.typed-cursor {
+    color: #FE5BD6;
+    font-size: 8rem;
+    text-shadow:
+        0 0 5px #FE5BD6,
+        0 0 10px #FE5BD6;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons and text */
+  align-items: center; /* Center the items vertically */
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  gap: 20px; /* Space between buttons */
+  align-items: center; /* Vertically align if heights differ */
+  /* padding-bottom: 100px; */
+}
+
+.square-button {
+  width: 65px;        
+  height: 70px;
+  font-size: 3rem;
+  color: #FE5BD6;
+}
+
+.rectangle-button {
+  width: 100px;
+  height: 60px;
+  background-color: #FE5BD6;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+
+.home-text {
+  max-width: 800px; /* Set the maximum width */
+  width: 100%; /* Ensure it takes up available space but doesn't exceed max-width */
+}
+
+
+.square-button:hover {
+  color: #fcea7e;
+  text-shadow:
+    0 0 5px #fcea7e,
+    0 0 10px #fcea7e;
+  transform: scale(1.05);
+}
+
+.rectangle-button:hover {
+  background-color: #fcea7e;
+  color: #210138;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #fcea7e, 0 0 15px #fcea7e;
+}
+
+.rectangle-button:active,
+.square-button:active {
+  transform: scale(0.95);
+}

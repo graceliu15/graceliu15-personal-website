@@ -1,0 +1,82 @@
+.experiences-section {
+    padding-top: 80px;
+  }
+
+.experiences-heading {
+    padding-bottom: 30px;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fcea7e;
+    text-shadow:
+    0 0 7px #fcea7e;
+}
+
+.experiences-list {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+  
+.experience-title {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.experience-dur,
+.experience-loc {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.description-list {
+    padding-bottom: 0px;
+}
+
+.skills-list {
+    list-style: none;       
+    display: flex;          
+    gap: 1rem;             
+    padding: 0;
+    margin: 0;
+}
+
+.skill {
+    background-color: #FE5BD6;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #210138;
+    font-weight: 500;
+    /* margin-left: 10px; */
+    font-size: 0.9em;
+}
+
+.skill:hover {
+    background-color: #fcea7e;
+    color: #210138;
+    /* transform: scale(1.05); */
+}
+
+.experience-list {
+    list-style-position: outside; 
+    padding-left: 3rem;
+    position: relative; 
+  }
+
+  .experience-list::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0.2em;
+    background-color: #FE5BD6; 
+    box-shadow: 0 0 20px #FE5BD6, 0 0 25px #FE5BD6, 0 0 50px #FE5BD6;
+  }
+
+.experience-list li::marker {
+    font-size: 1.2rem;     
+}
+  
