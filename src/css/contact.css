@@ -32,9 +32,7 @@
 }
 
 .contact-button:hover {
-    border: 1px solid #FE5BD6;
     box-shadow: 0 0 10px #FE5BD6, 0 0 15px #FE5BD6;
-    /* transform: scale(1.05); */
 }
 
 .contact-icon {
